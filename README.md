@@ -1,4 +1,3 @@
-# Project-Team-7
 ## Employee Review BlockChain Network
 **Protecting companies against wrongful termination lawsuits by their employees.**
 
