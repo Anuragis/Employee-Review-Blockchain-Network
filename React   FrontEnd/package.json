@@ -1,0 +1,43 @@
+{
+  "name": "reviewnet",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "all-the-cities": "^2.0.0",
+    "axios": "^0.17.1",
+    "chart.js": "^2.7.1",
+    "cities-list": "^1.0.3",
+    "crypto-js": "^3.1.9-1",
+    "cryptojs": "^2.5.3",
+    "history": "^4.7.2",
+    "js-file-download": "^0.4.1",
+    "material-ui": "0.19.4",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "moment": "^2.19.2",
+    "muicss": "^0.9.28",
+    "react": "^16.1.1",
+    "react-bootstrap": "^0.31.5",
+    "react-chartjs-2": "^2.6.4",
+    "react-dom": "^16.1.1",
+    "react-google-charts": "^1.5.5",
+    "react-googlecharts": "^1.4.0",
+    "react-modal": "^3.1.2",
+    "react-notifications": "^1.4.3",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.8",
+    "react-scripts": "1.0.17",
+    "react-slick": "^0.15.4",
+    "react-stars": "^2.2.5",
+    "redux": "^3.7.2",
+    "redux-persist": "^4.10.1",
+    "redux-reset": "^0.3.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

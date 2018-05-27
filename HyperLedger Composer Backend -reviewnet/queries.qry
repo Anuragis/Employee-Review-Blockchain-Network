@@ -1,0 +1,6 @@
+query selectReviewByEmployee {
+  description: "Select all reviews for an employee"
+  statement:
+      SELECT org.sjsu.reviewnet.Review
+ 	WHERE (employee == _$employee)
+}

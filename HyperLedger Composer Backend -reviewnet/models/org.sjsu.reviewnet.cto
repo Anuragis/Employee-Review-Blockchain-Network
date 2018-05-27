@@ -1,0 +1,92 @@
+/**
+ *Employee review network
+ */
+namespace org.sjsu.reviewnet
+
+
+asset Review identified by reviewID{
+	o String reviewID
+	o String reviewerType
+	o String reviewerID
+	o ratingValue rating
+	o reviewTerm term
+	o String year
+	o String comments
+	o String awards
+	o String warnings
+	o projectReview project
+	o incidentRecord record
+	-->Employee employee
+}
+
+
+abstract participant Person identified by ID{
+	o String ID
+	o String firstName
+	o String lastName
+	o String designation
+}
+
+concept projectReview{
+	o String projectID
+	o String projectName
+	o String projectOwner
+	o String majorImpact
+	o String projectComments
+}
+
+concept incidentRecord{
+	o incidentType type
+	o intensityLevel level
+	o String description
+	o String actionTaken	
+}
+
+
+enum reviewTerm{
+	o NA
+	o midYear
+	o yearEnd
+}
+
+enum ratingValue{
+	o NA
+	o top
+	o excellent
+	o good
+	o average
+	o poor
+}
+
+enum incidentType{
+	o other
+	o policyVoilation
+	o longLeaves
+	o complaint
+	o healthIssue
+}
+
+enum intensityLevel{
+	o NA	
+	o critical
+	o high
+	o medium
+	o minor
+}
+
+participant Employee extends Person{
+}
+
+participant Manager extends Person{
+}
+
+participant TeamLead extends Person{
+}
+
+participant HR extends Person{
+}
+
+transaction AddReview {
+    -->Review review
+    -->Employee reviewedEmployee
+}
